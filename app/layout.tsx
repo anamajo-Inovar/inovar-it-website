@@ -1,9 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import SmoothScroll from "../components/SmoothScroll";
+import { Inter, Space_Grotesk } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-space-grotesk",
+});
 
 export const metadata: Metadata = {
   title: "Inovar IT",
@@ -17,8 +25,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#F7F7FB] text-[#0B0B23]`}>
-        <SmoothScroll>{children}</SmoothScroll>
+      <body
+        className={`${inter.variable} ${spaceGrotesk.variable} bg-[#F7F7FB] text-[#0B0B23]`}
+      >
+        {children}
       </body>
     </html>
   );

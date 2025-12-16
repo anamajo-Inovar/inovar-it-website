@@ -67,7 +67,7 @@ export default function ServicesSection() {
                 className="
                   group
                   w-[300px] h-[300px]
-                  bg-[#D9D9D9]
+                  bg-[#FFFFFF]
                   rounded-[28px]
                   shadow-[0_18px_0_0_rgba(0,0,0,0.25)]
                   flex flex-col items-center justify-start
@@ -111,7 +111,7 @@ export default function ServicesSection() {
                 inline-flex items-center justify-center
                 w-[340px] h-[56px]
                 rounded-[16px]
-                bg-[#D9D9D9] text-[#0B0B23]
+                bg-[#FFFFFF] text-[#0B0B23]
                 font-semibold
                 transition-transform duration-200
                 hover:scale-[1.02]
