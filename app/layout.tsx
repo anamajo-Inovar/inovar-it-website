@@ -1,11 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import SmoothScroll from "@/components/SmoothScroll";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -24,11 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="lenis">
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} bg-[#F7F7FB] text-[#0B0B23]`}
+        className={`${inter.className} ${spaceGrotesk.variable} bg-[#F7F7FB] text-[#0B0B23]`}
       >
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
