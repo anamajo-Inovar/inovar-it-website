@@ -1,5 +1,6 @@
 import HeaderServices from "@/components/HeaderServices";
 import ServicesHero from "@/components/ServicesHero";
+import ServicesGrid from "@/components/ServicesGrid";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -10,8 +11,7 @@ export default function ServicesPage() {
 
       <main>
         <ServicesHero />
-
-        {/* Aqui entra depois: Grid de serviços + seção de destaque (Cloud Migration) */}
+        <ServicesGrid />
       </main>
 
       <CTA />
