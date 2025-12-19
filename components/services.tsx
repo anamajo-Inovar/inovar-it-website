@@ -8,42 +8,42 @@ const services = [
     desc:
       "Comprehensive technology services managed by our experts, allowing you to focus on your core business while we handle your IT needs.",
     img: "/IToutsourcing.png",
-    anchor: "it-outsourcing",
+    openKey: "it-outsourcing",
   },
   {
     title: "Custom Software Development",
     desc:
       "Tailored software solutions designed to meet your business needs and drive efficiency.",
     img: "/customsoftware.png",
-    anchor: "custom-software-development",
+    openKey: "custom-software", // ✅ bate com o key do ServicesGrid
   },
   {
     title: "Technology Consulting",
     desc:
       "Expert guidance to help you make the right technology decisions for sustainable growth.",
     img: "/technologyconsulting.png",
-    anchor: "technology-consulting",
+    openKey: "tech-consulting", // ✅ bate com o key do ServicesGrid
   },
   {
     title: "System Integration",
     desc:
       "Seamlessly connect your systems to improve workflows and boost productivity.",
     img: "/systemintegration.png",
-    anchor: "system-integration",
+    openKey: "system-integration",
   },
   {
     title: "Cloud Migration",
     desc:
       "Smooth transition of your applications and data to secure, scalable cloud environments.",
     img: "/cloudmigration.png",
-    anchor: "cloud-migration",
+    openKey: "cloud-migration",
   },
   {
     title: "Support & Maintenance",
     desc:
       "Reliable technical support to keep your systems running at peak performance.",
     img: "/support.png",
-    anchor: "support-maintenance",
+    openKey: "support-maintenance",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function ServicesSection() {
           {services.map((s, i) => (
             <Reveal key={s.title} delay={0.06 * i}>
               <Link
-                href={`/services#${s.anchor}`}
+                href={`/services?open=${s.openKey}`}
                 className="
                   group
                   w-[300px] h-[300px]
