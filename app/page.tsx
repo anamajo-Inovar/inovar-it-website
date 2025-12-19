@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 
-import HeaderServices from "@/components/HeaderServices";
-import ServicesHero from "@/components/ServicesHero";
-import ServicesGrid from "@/components/ServicesGrid";
+import HeaderServices from "@/components/header";
+import ServicesHero from "@/components/Hero";
+import ServicesGrid from "@/components/services";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
